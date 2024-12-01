@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YesNo</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        button{
+            position: absolute;
+            padding: 20px 40px;
+            border: none;
+            font-size: 20px;
+            outline: none;
+            border-radius: 30px;
+            color: #fff;
+            top: 60%;
+            transition: 0.1s ease-in-out;
+            cursor: pointer;
+        }
+        .contain{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .box{
+            width: 400px;
+            height: 400px;
+        }
+        #BtnNo{
+            background-color: red;
+            left: 42%;
+        }
+        #BtnYes{
+            background-color: green;
+            left: 53%;
+        }
+        img{
+            margin-left: 5%;
+            width: 400px;
+        }
+        @media (max-width:576px) {
+            img{
+                margin-left: 0%;
+                margin-top: 15%;
+            }
+            #BtnNo{
+                left: 20%;
+            }
+            button{
+                top: 70%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="contain">
+        <div class="box">
+            <img id="image" src="https://media.tenor.com/UfJ3zb1_HYkAAAAM/please-cute.gif" alt="">
+            <button id="BtnNo">No</button>
+            <button id="BtnYes">Yes</button>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
